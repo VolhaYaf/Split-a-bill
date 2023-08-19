@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the Bill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div id="container">
+
+<h1>Split the Bill!</h1>
+
+<form >
+<input type="text" id="bill" placeholder="Bill amount">
+
+<input type="text" id="people" placeholder="Number of people">
+
+<button id="addTip">Add a tip</button>
+
+<select id="tip">
+    <option class="option" disabled selected>Select an option:</option>
+    <option value="0.30">30%</option>
+    <option value="0.20">20%</option>
+    <option value="0.10">10%</option>
+    <option value="0.00">No tip</option>
+</select>
+
+<button id="btn">Calculate</button>
+</form>
+
+<div id="amountToPay">
+    
+<div id="billSplit">
+<h4>Bill</h4>
+<span>$</span>
+<span id="dividedBill"></span>
+<span>per person</span>
+</div>
+
+<div id="totalTip">
+    <h4>Tip</h4>
+    <span>$</span>
+    <span id="dividedTip"></span>
+    <span>per person</span>
+    </div>
+
+    <div id="total">
+        <h4>Total</h4>
+        <span>$</span>
+        <span id="billAndTip"></span>
+        <span>per person</span>
+        </div>
+
+    <div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
