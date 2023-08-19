@@ -29,13 +29,10 @@ function calculateAmount(e) {
     }
 
     let amountPerPerson = bill/people;
-    console.log(amountPerPerson);
     
     let tipPerPerson = (bill * tip / people);
-    console.log(tipPerPerson);
 
     let totalSum = amountPerPerson + tipPerPerson;
-    console.log(totalSum);
 
 
     document.querySelector('#dividedBill').textContent = amountPerPerson.toFixed(2);
